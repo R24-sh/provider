@@ -8,9 +8,9 @@ class TaskProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: const Color.fromARGB(255, 237, 242, 242),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 165, 11, 34),
+        backgroundColor: const Color.fromARGB(255, 14, 157, 14),
         title: Text(
           'Provider To-Do (${context.watch<TaskData>().jumlahTugas})',
         ),
@@ -52,7 +52,8 @@ class TaskProvider extends StatelessWidget {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.green,
+        // Diubah menjadi hijau tua agar sama dengan AppBar
+        backgroundColor: const Color.fromARGB(255, 14, 157, 14),
         child: const Icon(Icons.add),
         onPressed: () {
           showModalBottomSheet(
